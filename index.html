@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="chupiCalendar.css">
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id="calendar"></div>
+	<div id="prueba"></div>
+	<script type="text/javascript" src="chupiCalendar.js"></script>
+	<script type="text/javascript">
+		var container=document.getElementById('calendar');
+		var calendar=new ChupiCalendar(container,{lan: 'es',firstDay: 1});
+
+		calendar.setOptions(container,{lan: 'es',firstDay: 2});
+		calendar.refresh();
+
+	</script>
+</body>
+</html>

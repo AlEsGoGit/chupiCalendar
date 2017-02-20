@@ -1,0 +1,145 @@
+/* div container */
+* {
+	box-sizing: border-box;
+}
+
+.calendar-container {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	width: 100%;
+	padding: 10px;
+	background: #E0E0E0;
+}
+
+/* month/year text + buttons */
+.calendar-header {
+	width: 100%;
+	text-align: center;
+}
+
+.calendar-header div {
+	float:left;
+	width: 20%;
+	margin-bottom: 10px;
+
+}
+
+.calendar-header div:nth-child(2) {
+	text-transform: uppercase;
+	width: 60%;
+	font-size: 1.9em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.calendar-header button {
+	background: #000;
+	color: #fff;
+	display: block;
+	border:0px;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius:25%;
+	margin: auto;
+	font-size:40px;
+	cursor: pointer;
+}
+
+.calendar-header button:hover {
+	outline: 0px;
+	background: grey;
+}
+
+.calendar-header button:focus {
+	outline: 0px;
+}
+
+/* Table with days */
+.calendar-table {
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+
+/* Row */
+.calendar-table ul {
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+	display:table;
+	table-layout: fixed;
+}
+
+/* Column */
+.calendar-table li {
+	font-size: 1.5em;
+	padding: 7px;
+	display: table-cell;
+    text-align: center;
+}
+
+.calendar-table-week ul {
+	background: #000;
+	color: white;
+}
+
+.calendar-table-week li{
+	padding: 10px;
+}
+
+
+/* Days */
+
+.calendar-table-days li {
+}
+
+.calendar-table-days li.other-month{
+	background: #E0E0E0;
+}
+
+.calendar-table-days li div.day-cell {
+	box-sizing: border-box;
+	cursor: pointer;
+	margin:auto;
+	width: 1.9em;
+	height: 1.9em;
+	padding-top: 5px;
+	border-radius: 50%;
+	background: #fff;
+	z-index: 1;
+	border: 4px solid #fff;
+}
+
+.calendar-table-days li.other-month div.day-cell{
+	background: #E0E0E0;
+	border-color: #E0E0E0;
+}
+
+.calendar-table-days li div.day-cell:hover{
+	/*
+	border-color: #000
+	*/
+}
+
+/* today li */
+.calendar-table-days li.today {
+}
+
+/* Div under day*/
+.calendar-table-days li div.event-cell {
+	/*
+	cursor: pointer;
+	margin:auto;
+	width: 0.5em;
+	height: 0.5em;
+	padding-top: 4px;
+	border-radius: 50%;
+	background: grey;
+	z-index: 0;
+	*/
+}
+
+
+
+
+
+
